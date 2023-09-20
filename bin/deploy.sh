@@ -4,6 +4,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 cd /app
+
+nvm use -lts
+
 npm install &&
 npm build &&
 pm2 restart petervirtue
