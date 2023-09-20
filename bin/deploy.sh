@@ -1,5 +1,5 @@
 #!/bin/bash
-source /home/ec2-user/.bash_profile
+source ~/.bashrc
 
 cd /app
 
