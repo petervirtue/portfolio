@@ -22,4 +22,4 @@ files:
 hooks:
   AfterInstall:
     - location: bin/deploy.sh
-      timeout: 360
+      runas: ec2-user
