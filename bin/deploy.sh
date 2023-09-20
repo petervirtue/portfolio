@@ -1,9 +1,9 @@
 #!/bin/bash
-source ~/.bashrc
+# source ~/.bashrc
 
 cd /app
 
-nvm use -lts
+nvm install --lts
 
 npm install &&
 npm build &&
