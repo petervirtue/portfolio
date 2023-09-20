@@ -20,7 +20,6 @@ files:
   - source: bin
     destination: /app/bin
 hooks:
-  ApplicationStart:
+  AfterInstall:
     - location: bin/deploy.sh
       timeout: 300
-      runas: root
