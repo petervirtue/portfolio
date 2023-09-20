@@ -6,5 +6,5 @@ cd /app
 nvm install --lts
 
 npm install &&
-npm build &&
+npm run build &&
 pm2 restart petervirtue
