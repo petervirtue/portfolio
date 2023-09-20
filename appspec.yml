@@ -9,7 +9,7 @@ files:
     destination: /app
   - source: postcss.config.js
     destination: /app
-  - source: tailwind.config.js
+  - source: tailwind.config.ts
     destination: /app
   - source: tsconfig.json
     destination: /app
