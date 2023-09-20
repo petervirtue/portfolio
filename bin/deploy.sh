@@ -1,6 +1,5 @@
 #!/bin/bash
 # source ~/.bashrc
-
 cd /app
 
 nvm install --lts
