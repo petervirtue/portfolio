@@ -7,11 +7,7 @@ const isProduction = process.env.NODE_ENV === "production";
 
 export default function Home() {
   useEffect(() => {
-    if (isProduction) gtag.pageview(new URL("petervirtue.com"));
-
-    const handleRouteChange = (url: URL) => {
-      /* invoke analytics function only for production */
-    };
+    if (isProduction) gtag.pageview(new URL("/", "https://petervirtue.com"));
   });
 
   return (

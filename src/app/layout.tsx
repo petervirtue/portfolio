@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
-
 const isProduction = process.env.NODE_ENV === "production";
 
 export const metadata: Metadata = {
