@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="grid bg-white min-h-screen place-items-center px-6 py-24">
+    <main className="grid bg-white min-h-full place-items-center px-6 py-24">
       <div className="text-center">
         <p className="text-base font-semibold text-gray-700">
           🚧 Apologies for the appearance 🚧
