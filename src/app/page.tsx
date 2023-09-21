@@ -1,4 +1,19 @@
+"use client";
+
+import { useEffect } from "react";
+import * as gtag from "../lib/gtag";
+
+const isProduction = process.env.NODE_ENV === "production";
+
 export default function Home() {
+  useEffect(() => {
+    if (isProduction) gtag.pageview(new URL("petervirtue.com"));
+
+    const handleRouteChange = (url: URL) => {
+      /* invoke analytics function only for production */
+    };
+  });
+
   return (
     <main className="grid bg-white min-h-screen place-items-center px-6 py-24">
       <div className="text-center">
