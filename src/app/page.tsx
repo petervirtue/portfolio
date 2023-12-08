@@ -14,7 +14,7 @@ export default function Home() {
   });
 
   return (
-    <div className="flex flex-col items-start justify-center w-screen h-screen overflow-hidden animate-fade-in">
+    <div className="flex flex-col items-start justify-center w-screen h-screen overflow-hidden p-5 md:p-0">
       <Navigation />
       <About />
       <Socials />

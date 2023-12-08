@@ -8,14 +8,14 @@ export const About = () => {
         hi, I&apos;m peter 👋
       </h1>
       <p className="my-5 text-md text-slate-300">
-        <span>
+        <span className="mr-1">
           I&apos;m a software engineer dedicated to crafting intuitive digital
           experiences and innovative solutions. I currently work at
         </span>
         <Link
           target="_blank"
           href="https://foliahealth.com"
-          className="inline-block px-1 ml-1 duration-200 rounded bg-slate-800 hover:bg-slate-600 border border-slate-500 text-white text-md"
+          className="inline-block px-1 duration-200 rounded bg-slate-800 hover:bg-slate-600 border border-slate-500 text-white text-md"
         >
           <span className="flex flex-row items-center justify-center">
             <Image
