@@ -1,15 +1,28 @@
-import { GA_TRACKING_ID } from "@/lib/gtag";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { NextFont } from "next/dist/compiled/@next/font";
+import { GoogleAnalytics } from "./components/googleAnalytics";
 
-const inter = Inter({ subsets: ["latin"] });
-const isProduction = process.env.NODE_ENV === "production";
+const isProduction: boolean = process.env.NODE_ENV === "production";
+
+const inter: NextFont = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 export const metadata: Metadata = {
   title: "Peter Virtue",
-  description: "Peter Virtue - A full stack software engineer",
+  description: "Peter Virtue - Software Engineer",
   themeColor: "#ffffff",
+  icons: [
+    {
+      url: "/favicon.ico",
+      rel: "icon",
+      sizes: "any",
+      type: "image/svg+xml",
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -19,31 +32,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        {/* enable analytics script only for production */}
-        {isProduction && (
-          <>
-            <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
-            />
-            <script
-              // eslint-disable-next-line react/no-danger
-              dangerouslySetInnerHTML={{
-                __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_TRACKING_ID}', {
-              page_path: window.location.pathname,
-            });
-          `,
-              }}
-            />
-          </>
-        )}
-      </head>
-      <body className={inter.className}>{children}</body>
+      <head>{isProduction && <GoogleAnalytics />}</head>
+      <body
+        className={
+          inter.className +
+          " bg-slate-900 antialiased max-w-2xl flex flex-row mx-auto"
+        }
+      >
+        {children}
+      </body>
     </html>
   );
 }
