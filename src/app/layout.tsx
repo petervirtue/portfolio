@@ -36,7 +36,7 @@ export default function RootLayout({
       <body
         className={
           inter.className +
-          " bg-slate-900 antialiased max-w-2xl flex flex-row mx-auto"
+          " bg-slate-900 antialiased max-w-2xl flex overflow-hidden flex-row mx-auto"
         }
       >
         {children}
