@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export const Navigation = () => {
   const links = [
-    { name: "home", href: "/", target: "" },
-    { name: "resume", href: "/resume.pdf", target: "_blank" },
+    { name: "Home", href: "/", target: "" },
+    { name: "Resume", href: "/resume.pdf", target: "_blank" },
   ];
 
   return (

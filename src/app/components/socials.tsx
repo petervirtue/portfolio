@@ -5,12 +5,12 @@ import Link from "next/link";
 export const Socials = () => {
   const links = [
     {
-      name: "github",
+      name: "Github",
       href: "https://github.com/petervirtue",
       icon: faGithub,
     },
     {
-      name: "linkedin",
+      name: "LinkedIn",
       href: "https://www.linkedin.com/in/petervirtue/",
       icon: faLinkedin,
     },

@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <div className="flex flex-col items-start">
       <h1 className="my-5 text-xl font-semibold text-slate-50">
-        hi, I&apos;m peter 👋
+        Hi, I&apos;m Peter 👋
       </h1>
       <p className="my-5 text-md text-slate-300">
         <span className="mr-1">
