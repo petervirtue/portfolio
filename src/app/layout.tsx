@@ -14,7 +14,7 @@ const inter: NextFont = Inter({
 export const metadata: Metadata = {
   title: "Peter Virtue",
   description: "Peter Virtue - Software Engineer",
-  themeColor: "#ffffff",
+  themeColor: "#020617",
   icons: [
     {
       url: "/favicon.ico",
