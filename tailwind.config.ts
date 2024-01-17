@@ -13,8 +13,18 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      typography: (theme: any) => ({
+        light: {
+          css: {
+            h1: { color: theme("colors.white") },
+            h2: { color: theme("colors.white") },
+            p: { color: theme("colors.white") },
+          },
+        },
+      }),
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;
