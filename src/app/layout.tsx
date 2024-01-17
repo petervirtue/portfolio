@@ -1,5 +1,5 @@
 import "./globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { NextFont } from "next/dist/compiled/@next/font";
 import { GoogleAnalytics } from "./components/GoogleAnalytics";
@@ -10,10 +10,13 @@ const inter: NextFont = Inter({
   variable: "--font-inter",
 });
 
+export const viewport: Viewport = {
+  themeColor: "#0f172a",
+};
+
 export const metadata: Metadata = {
   title: "Peter Virtue",
   description: "Peter Virtue - Software Engineer",
-  themeColor: "#0f172a",
   icons: [
     {
       url: "/favicon.ico",
@@ -41,7 +44,7 @@ export default function RootLayout({
       <body
         className={
           inter.className +
-          " bg-slate-900 antialiased max-w-2xl flex overflow-hidden flex-row mx-auto"
+          " bg-slate-900 antialiased max-w-2xl flex flex-row mx-auto"
         }
       >
         {children}
