@@ -1,9 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  IconDefinition,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 
-export const Socials = () => {
-  const links = [
+interface SocialNavigationItem {
+  name: string;
+  href: string;
+  icon: IconDefinition;
+}
+
+export const SocialNavigation = () => {
+  const links: SocialNavigationItem[] = [
     {
       name: "Github",
       href: "https://github.com/petervirtue",

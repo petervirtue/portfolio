@@ -2,9 +2,8 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { NextFont } from "next/dist/compiled/@next/font";
-import { GoogleAnalytics } from "./components/googleAnalytics";
-
-const isProduction: boolean = process.env.NODE_ENV === "production";
+import { GoogleAnalytics } from "./components/GoogleAnalytics";
+import { isProduction } from "@/lib/utils";
 
 const inter: NextFont = Inter({
   subsets: ["latin"],
@@ -38,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>{isProduction && <GoogleAnalytics />}</head>
+      <head>{isProduction() && <GoogleAnalytics />}</head>
       <body
         className={
           inter.className +
