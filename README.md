@@ -1,16 +1,16 @@
 # petervirtue.com
 
 Welcome to the repository for my personal portfolio website, [petervirtue.com](https://petervirtue.com). The goal of this project was to create a simple landing page to showcase my current & previous work, as well as where I can be found on different platforms. Built with Next.js and TypeScript, it's designed to be fast, responsive, and accessible.
-
 *I'm hoping that with some more time soon I can continue to build out this portfolio to contain some fancier interfaces and interactions*
 
 ## Running locally
 
-**Requirements**:
+### Requirements
+
 Node.js
 npm or yarn
 
-**Installation**
+### Installation
 
 - Clone the repo.
 - Install NPM packages:
