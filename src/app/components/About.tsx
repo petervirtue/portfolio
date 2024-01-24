@@ -8,7 +8,7 @@ export const About = () => {
       </h1>
       <p className="my-5 text-md text-slate-300">
         <span className="mr-1">
-          I&apos;m a software engineer dedicated to crafting intuitive digital
+          I&apos;m a Software Engineer dedicated to crafting intuitive digital
           experiences and innovative solutions. I currently work at
         </span>
         <ExperienceLink
@@ -19,9 +19,9 @@ export const About = () => {
           Folia Health
         </ExperienceLink>
         <span>
-          , where I lead efforts in building cloud infrastructure and designing
-          efficient APIs while fostering team growth and enhancing
-          relationships.
+          , where I lead efforts in building fast, feature-rich and
+          user-friendly applications with modern technologies. I pride myself on
+          being a quick learner and always love a good challenge.
         </span>
       </p>
     </div>
