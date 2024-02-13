@@ -8,7 +8,7 @@ export const About = () => {
       </h1>
       <p className="my-5 text-md text-slate-300">
         <span className="mr-1">
-          I&apos;m a Software Engineer dedicated to crafting intuitive digital
+          I&apos;m a software engineer dedicated to crafting intuitive digital
           experiences and innovative solutions. I currently work at
         </span>
         <ExperienceLink
