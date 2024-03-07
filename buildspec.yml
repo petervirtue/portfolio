@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - cd web
+      - echo Installing packages
+      - npm ci
+  pre_build:
+    commands:
+      - echo No pre-build steps to run
+  build:
+    commands:
+      - echo Building and exporting the app
+      - npm run build
+      - npm run export
+artifacts:
+  files:
+    - "**/*"
+  base-directory: "out"
