@@ -62,8 +62,8 @@ data "aws_iam_policy_document" "codepipeline_assume_role_policy" {
   version = "2012-10-17"
 
   statement {
-    effect    = "Allow"
-    actions   = ["sts:AssumeRole"]
+    effect  = "Allow"
+    actions = ["sts:AssumeRole"]
 
     principals {
       type        = "Service"
@@ -81,6 +81,8 @@ data "aws_iam_policy_document" "codepipeline_policy" {
     actions = [
       "s3:*",
       "cloudfront:CreateInvalidation",
+      "codebuild:StartBuild",
+      "codebuild:BatchGetBuilds",
     ]
 
     resources = ["*"]
