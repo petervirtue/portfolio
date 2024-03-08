@@ -15,7 +15,6 @@ phases:
     commands:
       - echo Building and exporting the app
       - npm run build
-      - npm run export
 artifacts:
   files:
     - "**/*"
