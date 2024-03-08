@@ -36,7 +36,7 @@ module "codedeploy" {
   iam_codepipeline_role_arn        = module.iam.iam_codepipeline_role.arn
   iam_lambda_codepipeline_role_arn = module.iam.iam_lambda_codepipeline_role.arn
 
-  cloudfront_distribution_id = module.cloudfront.cloudfront_site_distribution.arn
+  cloudfront_distribution_id = module.cloudfront.cloudfront_site_distribution.id
 
   github_branch = var.github_branch
   github_owner  = var.github_owner
