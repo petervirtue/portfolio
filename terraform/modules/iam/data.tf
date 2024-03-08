@@ -114,6 +114,7 @@ data "aws_iam_policy_document" "cloudfront_invalidation_policy" {
   statement {
     effect = "Allow"
     actions = [
+      "cloudfront:GetDistribution",
       "cloudfront:CreateInvalidation",
       "logs:CreateLogGroup",
       "logs:CreateLogStream",
