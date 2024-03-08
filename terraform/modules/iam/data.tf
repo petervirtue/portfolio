@@ -119,6 +119,8 @@ data "aws_iam_policy_document" "cloudfront_invalidation_policy" {
       "logs:CreateLogGroup",
       "logs:CreateLogStream",
       "logs:PutLogEvents",
+      "codepipeline:PutJobSuccessResult",
+      "codepipeline:PutJobFailureResult",
     ]
     resources = ["*"]
   }
