@@ -112,8 +112,13 @@ data "aws_iam_policy_document" "cloudfront_invalidation_policy" {
   version = "2012-10-17"
 
   statement {
-    effect    = "Allow"
-    actions   = ["cloudfront:CreateInvalidation"]
+    effect = "Allow"
+    actions = [
+      "cloudfront:CreateInvalidation",
+      "logs:CreateLogGroup",
+      "logs:CreateLogStream",
+      "logs:PutLogEvents",
+    ]
     resources = ["*"]
   }
 }
