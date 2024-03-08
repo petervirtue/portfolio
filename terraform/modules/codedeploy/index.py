@@ -16,4 +16,4 @@ def lambda_handler(event, context):
             'CallerReference': str(context.aws_request_id)
         }
     )
-    return invalidation
+    return str(invalidation)
