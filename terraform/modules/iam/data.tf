@@ -83,6 +83,7 @@ data "aws_iam_policy_document" "codepipeline_policy" {
       "cloudfront:CreateInvalidation",
       "codebuild:StartBuild",
       "codebuild:BatchGetBuilds",
+      "lambda:InvokeFunction",
     ]
 
     resources = ["*"]
