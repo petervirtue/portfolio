@@ -124,9 +124,8 @@ resource "aws_codepipeline" "pipeline" {
       version   = "1"
       run_order = 2
 
-
       configuration = {
-        FunctionName   = aws_lambda_function.cloudfront_invalidate_cache.arn,
+        FunctionName   = aws_lambda_function.cloudfront_invalidate_cache.function_name,
         UserParameters = "{\"DistributionId\":\"${var.cloudfront_distribution_id}\"}"
       }
     }
