@@ -17,7 +17,7 @@ resource "aws_codebuild_project" "build" {
 
   environment {
     compute_type = "BUILD_GENERAL1_SMALL"
-    image        = "aws/codebuild/standard:4.0"
+    image        = "al2/standard/5.0"
     type         = "LINUX_CONTAINER"
   }
 
@@ -38,7 +38,6 @@ resource "aws_lambda_function" "cloudfront_invalidate_cache" {
   handler       = "index.lambda_handler"
   runtime       = "python3.8"
   role          = var.iam_lambda_codepipeline_role_arn
-
 
   filename         = data.archive_file.lambda_zip.output_path
   source_code_hash = data.archive_file.lambda_zip.output_base64sha256
